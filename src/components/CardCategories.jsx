@@ -1,5 +1,5 @@
 import React from "react";
-import { useAxiosFood } from "../hooks/UseAxiosFood";
+import { useAxiosFood } from "../Hooks/useAxiosFood";
 
 export default function CardCategories() {
   const { data, loading, error } = useAxiosFood(
