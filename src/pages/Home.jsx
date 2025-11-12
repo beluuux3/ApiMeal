@@ -4,7 +4,7 @@ import Carrousel from "../components/Carrousel";
 
 export default function Home() {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className=" px-15 py-8">
       <section className="mb-10">
         <Carrousel />
       </section>

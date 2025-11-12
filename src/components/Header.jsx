@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
-      <div className="container px-4 py-4 flex flex-col justify-center items-center">
+      <div className="px-4 py-4 flex flex-col justify-center items-center">
         <Link
           to="/"
           className="text-3xl font-extrabold text-primary-700 hover:text-primary-800 transition duration-300"
