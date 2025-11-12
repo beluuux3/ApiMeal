@@ -36,13 +36,13 @@ export default function CardCategories() {
           <a
             key={categoria.idCategory}
             href={`/category/${categoria.strCategory}`}
-            className="flex flex-col items-center justify-center h-25 p-4 bg-orange-100 border border-gray-200 rounded-lg shadow-sm hover:bg-orange-400 hover:text-white transition-all duration-200"
+            className="flex flex-col items-center justify-center h-25 p-4 bg-orange-100 border border-gray-200 rounded-lg shadow-sm hover:bg-orange-400 hover:text-white hover:scale-115 transition-transform duration-200"
           >
             <div className=" flex items-center justify-center">
               <img
                 src={categoria.strCategoryThumb}
                 alt={categoria.strCategory}
-                className="relative w-full h-full -top-8"
+                className="absolute  h-15 -top-8 object-contain "
               />
             </div>
 
