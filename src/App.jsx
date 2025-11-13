@@ -2,8 +2,7 @@ import { Routes, Route } from "react-router-dom";
 // PPAGINAS
 import Home from "./pages/Home.jsx";
 import Recipe from "./pages/Recipe.jsx";
-import Random from "./pages/Random.jsx";
-import Categories from "./pages/Categories.jsx";
+import Meals from "./pages/Meals.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 
@@ -18,10 +17,8 @@ export default function App() {
       <main className="grow">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/recipe/:id" element={<Recipe />} />
-
-          <Route path="/random" element={<Random />} />
-          <Route path="/categories" element={<Categories />} />
+          <Route path="/recipe" element={<Recipe />} />
+          <Route path="/meals" element={<Meals />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
 

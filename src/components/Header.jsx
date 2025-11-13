@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Search from "./Search";
 import logo from "../images/food-logo.png";
+import Search from "./meals/Search";
+
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,8 +11,7 @@ export default function Header() {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Categories", path: "/categories" },
-    { name: "Random", path: "/random" },
+    { name: "Meals", path: "/meals" },
     { name: "Contact", path: "/contact" },
   ];
 
