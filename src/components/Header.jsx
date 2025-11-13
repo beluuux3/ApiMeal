@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Search from "./Search";
+import Search from "./meals/Search";
 
 export default function Header() {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Categories", path: "/categories" },
-    { name: "Random", path: "/random" },
+    { name: "Meals", path: "/meals" },
     { name: "Contact", path: "/contact" },
   ];
 
