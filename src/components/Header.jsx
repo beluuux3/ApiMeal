@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Search from "./Search";
 import logo from "../images/food-logo.png";
 import Search from "./meals/Search";
 
