@@ -30,6 +30,7 @@ const About = () => {
   return (
     <div className="container mx-auto px-4 py-12">
       <h1 className="text-5xl font-extrabold text-primary-700 mb-4 text-center">
+        <img src="" alt="" />
         Conoce a Nuestro Equipo
       </h1>
       <p className="text-xl text-gray-600 mb-10 text-center max-w-3xl mx-auto">
