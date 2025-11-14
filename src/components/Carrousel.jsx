@@ -96,7 +96,7 @@ const Carrousel = () => {
 
       {/* Right */}
       <button
-        onClick={prevSlide}
+        onClick={nextSlide}
         className="absolute top-1/2 right-4 transform -translate-y-1/2 p-3 rounded-full text-white z-10 hover:bg-[rgba(255,255,255,0.2)] transition duration-500"
         style={{ backgroundColor: 'rgba(255, 255, 255, 0.5)' }}
       >
