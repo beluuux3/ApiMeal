@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Search from "./Search";
+import Search from "./meals/Search";
+
 import logo from "../images/food-logo.png";
 
 export default function Header() {
@@ -9,8 +10,7 @@ export default function Header() {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Categories", path: "/categories" },
-    { name: "Random", path: "/random" },
+    { name: "Meals", path: "/meals" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -56,7 +56,6 @@ export default function Header() {
           </svg>
         </button>
       </div>
-
 
       {menuOpen && (
         <nav className="md:hidden bg-white border-t border-gray-200 flex flex-col items-center space-y-3 py-3">
