@@ -3,6 +3,7 @@ import { FoodContext } from "../../context/FoodContext";
 import { useAxiosFood } from "../../hooks/useAxiosFood";
 import Loader from "../Loader";
 import MealDetail from "./MealDetail";
+import { Link } from "react-router-dom";
 
 export default function CardFood() {
   const {
@@ -81,14 +82,15 @@ export default function CardFood() {
       <h2 className="text-xl font-bold mb-4">Meals: {filterType}</h2>
       <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 sm:px-6 md:px-8 lg:px-10 ">
         {sortedMeals.map((meal) => (
-          <MealDetail
-            key={meal.idMeal}
-            id={meal.idMeal}
-            name={meal.strMeal}
-            thumbnail={meal.strMealThumb}
-            country={meal.strArea}
-            catego={meal.strCategory}
-          />
+          <Link to={`/recipe/${meal.idMeal}`} key={meal.idMeal}>
+            <MealDetail
+              id={meal.idMeal}
+              name={meal.strMeal}
+              thumbnail={meal.strMealThumb}
+              country={meal.strArea}
+              catego={meal.strCategory}
+            />
+          </Link>
         ))}
       </div>
     </>

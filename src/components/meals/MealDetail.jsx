@@ -2,10 +2,7 @@ import React from "react";
 
 export default function MealDetail({ id, name, thumbnail, country, catego }) {
   return (
-    <a
-      href={`/recipe/${id}`}
-      className="flex flex-col rounded-md bg-white border border-gray-200 shadow-md transition-all duration-300 hover:shadow-lg hover:border-orange-400 overflow-hidden"
-    >
+    <div className="flex flex-col rounded-md bg-white border border-gray-200 shadow-md transition-all duration-300 hover:shadow-lg hover:border-orange-400 overflow-hidden">
       <div className="w-full h-40 overflow-hidden bg-gray-100">
         <img
           src={thumbnail}
@@ -26,6 +23,6 @@ export default function MealDetail({ id, name, thumbnail, country, catego }) {
           <span>Country: {country}</span>
         </div>
       </div>
-    </a>
+    </div>
   );
 }

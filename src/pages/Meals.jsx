@@ -36,8 +36,6 @@ export default function Meals() {
 
         <div className="flex justify-end items-center mb-6 space-x-4">
           <ButtonRandom />
-
-          <ButtonLetter />
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10">

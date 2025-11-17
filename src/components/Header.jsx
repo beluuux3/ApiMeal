@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Search from "./meals/Search";
+
 import logo from "../images/food-logo.png";
 import Search from "./meals/Search";
 
@@ -56,7 +58,6 @@ export default function Header() {
           </svg>
         </button>
       </div>
-
 
       {menuOpen && (
         <nav className="md:hidden bg-amber-600 border-t border-amber-200 flex flex-col items-center space-y-3 py-3">
