@@ -57,7 +57,7 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              Nuestra Misión
+              Our Mission
             </h2>
             <p className="text-gray-600 leading-relaxed">
               To offer a consistently surprising menu, utilizing the highest quality ingredients until they reach their maximum thermal capacity. We are dedicated to making food that’s impossible to forget—if only because of the powerful aroma.
@@ -65,7 +65,7 @@ const About = () => {
           </div>
           <div>
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              Nuestra Visión
+              Our Vision
             </h2>
             <p className="text-gray-600 leading-relaxed">
               To be the most beloved and slightly feared culinary Bundle, inspiring others to cook with abandon and perhaps a better-maintained ventilation system.
