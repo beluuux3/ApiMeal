@@ -1,4 +1,5 @@
 import React from "react";
+import hojita from "../../images/hojita.png";
 export default function Ingredients({ meal }) {
   const ingredients = Array.from({ length: 20 }, (_, i) => {
     const ing = meal[`strIngredient${i + 1}`];
@@ -9,11 +10,7 @@ export default function Ingredients({ meal }) {
   return (
     <>
       <div className="relative flex justify-center items-center ">
-        <img
-          src="../../images/hojita.png"
-          alt=""
-          className="drop-shadow-lg w-[95%]"
-        />
+        <img src={hojita} alt="" className="drop-shadow-lg w-[95%]" />
         <div className="absolute top-12 ml-4 flex flex-col w-full">
           <div className="flex items-center justify-center">
             <h2 className="text-2xl font-bold mb-2  text-orange-500">
