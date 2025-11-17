@@ -10,7 +10,7 @@ export default function Ingredients({ meal }) {
     <>
       <div className="relative flex justify-center items-center ">
         <img
-          src="/src/images/hojita.png"
+          src="../../images/hojita.png"
           alt=""
           className="drop-shadow-lg w-[95%]"
         />
