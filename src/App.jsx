@@ -17,7 +17,10 @@ export default function App() {
       <main className="grow">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/recipe" element={<Recipe />} />
+          {/* ruta ramdon */}
+          <Route path="/recipe/random" element={<Recipe />} />
+          {/* ruta segun card */}
+          <Route path="/recipe/:id" element={<Recipe />} />
           <Route path="/meals" element={<Meals />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

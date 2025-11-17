@@ -1,5 +1,6 @@
 import React from "react";
 import { useAxiosFood } from "../hooks/useAxiosFood";
+import { Link } from "react-router-dom";
 
 export default function CardCategories() {
   const { data, loading, error } = useAxiosFood(
@@ -33,23 +34,23 @@ export default function CardCategories() {
     <>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-8 p-4 mt-4">
         {data.categories.map((categoria) => (
-          <a
+          <Link
             key={categoria.idCategory}
-            href={`/category/${categoria.strCategory}`}
-            className="flex flex-col items-center justify-center h-25 p-4 bg-orange-100 border border-gray-200 rounded-lg shadow-sm hover:bg-orange-400 hover:text-white transition-all duration-200"
+            to={`/meals?category=${encodeURIComponent(categoria.strCategory)}`}
+            className="flex flex-col items-center justify-center h-25 p-4 bg-orange-100 border border-gray-200 rounded-lg shadow-sm hover:bg-orange-400 hover:text-white hover:scale-115 transition-transform duration-200"
           >
             <div className=" flex items-center justify-center">
               <img
                 src={categoria.strCategoryThumb}
                 alt={categoria.strCategory}
-                className="relative w-full h-full -top-8"
+                className="absolute h-15 -top-7 object-contain"
               />
             </div>
 
             <h5 className="text-lg font-semibold text-gray-900  text-center -mt-4">
               {categoria.strCategory}
             </h5>
-          </a>
+          </Link>
         ))}
       </div>
     </>

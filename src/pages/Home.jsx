@@ -10,10 +10,9 @@ export default function Home() {
       </section>
       <section>
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-3xl font-bold text-gray-800">Categorías</h2>
-          <button className="text-primary-600 hover:text-primary-800 font-semibold">
-            Ver todas las categorías
-          </button>
+          <h1 className="font-josefin text-4xl font-black text-orange-900 mb-6">
+            CATEGORIES
+          </h1>
         </div>
 
         <div className="">

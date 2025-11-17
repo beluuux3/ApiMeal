@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CaracMeal() {
+export default function CaracMeal({ meal }) {
   return (
     <>
       <div className="flex items-center justify-center">
@@ -14,7 +14,7 @@ export default function CaracMeal() {
               <path d="M61.101 40.512h-.411c-.469-12.96-9.983-23.647-22.404-25.928v-3.588a4.96 4.96 0 0 0-4.955-4.955 4.959 4.959 0 0 0-4.952 4.955v3.58A27.27 27.27 0 0 0 6.033 39.464h-3A2.036 2.036 0 0 0 1 41.498v13.753c0 1.121.912 2.033 2.034 2.033h8.348c.962 0 1.766-.672 1.976-1.571l15.007 2.07c.879.121 1.775.178 2.682.178 8.893 0 18.712-5.455 21.583-9.15h8.24c1.007 0 2.13-.75 2.13-1.826v-4.657c0-1.001-.852-1.816-1.899-1.816zM30.38 10.996a2.956 2.956 0 0 1 2.952-2.955 2.958 2.958 0 0 1 2.955 2.955v3.294a27.54 27.54 0 0 0-2.955-.163c-.998 0-1.982.058-2.952.161v-3.292zM11.382 55.284 3 55.251V41.498c0-.019.016-.034.034-.034l8.382.033-.034 13.786zm0-15.82H8.036a25.293 25.293 0 0 1 25.295-23.337c13.661 0 24.83 10.85 25.358 24.385H32.855a178.9 178.9 0 0 1-2.238-.925c-4.023-1.69-4.276-1.703-8.994-.503L13.38 41.14a2.033 2.033 0 0 0-1.998-1.675zm17.256 16.338-15.222-2.1v-10.51l8.7-2.17c4.207-1.07 4.207-1.068 7.727.409.679.285 1.478.62 2.365.973 1.23.625 1.772 1.54 1.524 2.58-.25 1.041-1.212 1.827-2.24 1.827h-5.69a1 1 0 0 0 0 2h24.11c-3.91 3.553-13.497 8.07-21.274 6.99zM61 46.772a.378.378 0 0 1-.13.04H35.09c.267-.411.47-.87.587-1.363a3.927 3.927 0 0 0-.473-2.937H61v4.26z" />
             </svg>
             <h3 className="font-bold text-[13px]">CATEGORY</h3>
-            <h2>category.meal</h2>
+            <h2>{meal.strCategory}</h2>
           </div>
 
           <div className="flex flex-col items-center gap-2 justify-center">
@@ -29,8 +29,8 @@ export default function CaracMeal() {
                 <path d="M23 36H8.5a1.5 1.5 0 0 1 0-3h5a3.5 3.5 0 0 0 0-7H12a1 1 0 0 1-1-1v-1a1 1 0 0 0-2 0v1a3 3 0 0 0 3 3h1.5a1.5 1.5 0 0 1 0 3h-5a3.5 3.5 0 0 0 0 7H23a1 1 0 0 0 0-2zM10 16a1 1 0 0 0 0-2 1 1 0 0 0 0 2z" />
               </g>
             </svg>
-            <h3 className="font-bold text-[13px]">COUNTRY</h3>
-            <h2>meal.country</h2>
+            <h3 className="font-bold text-[13px]">Origin</h3>
+            <h2>{meal.strArea}</h2>
           </div>
 
           <div className="flex flex-col items-center gap-2 justify-center">
@@ -51,7 +51,7 @@ export default function CaracMeal() {
             <h3 className="font-bold text-center text-[13px]">
               MAIN INGREDIENT
             </h3>
-            <h2>Ingredient.mel</h2>
+            <h2>{meal.strTags}</h2>
           </div>
         </div>
       </div>
