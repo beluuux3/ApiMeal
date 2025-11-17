@@ -1,41 +1,48 @@
 // src/pages/About.jsx
 import CardAbout from "../components/CardAbout.jsx";
+import AboutUs from "../images/about/aboutus-bg.png";
+import HeroAbout from "../components/HeroAbout.jsx";
 
-// Datos simulados del equipo
+
 const teamMembers = [
   {
     name: "EDMUND",
     initials: "E",
-    title: "Chef Principal",
-    description:
-      "Enfocado en la cocina tradicional, aporta la experiencia y el sabor clásico a todas nuestras recetas. Pasión por la carne y los estofados.",
+    title: "Head Bakery Specialist",
+    description:(
+      <>
+        Edmund views baking as a highly flammable form of engineering. He meticulously measures his flour, salt, and accidental soot, aiming for maximum structural integrity in his cakes—which often results in creations dense enough to stop a bullet. His proudest achievement: inventing a loaf of sourdough so sturdy, it currently serves as a countertop in our break room. He's also been known to **overcook a perfectly cold bottle of water** just by looking at it intensely.
+      </>
+    )
   },
   {
     name: "MOISES",
     initials: "M",
-    title: "Especialista Vegano",
-    description:
-      "Lidera la innovación en recetas sin productos animales, creando platos vibrantes y nutritivos. Experto en especias y gastronomía asiática.",
+    title: "Head Meat & Grill Specialist",
+    description:(
+      <>
+        Moisés doesn't just grill; he engages in a primal, aggressive dialogue with the flames. He firmly believes any temperature below the melting point of stainless steel is "low and slow." His signature technique is the **"Flash-Fry & Flee,"** resulting in steaks that are either still mooing or have achieved a state of carbon-based singularity. His philosophy is so intense, he once managed to **simultaneously boil and freeze a bowl of soup** in a single, confusing moment.
+      </>
+    ),
   },
   {
     name: "BELÉN",
     initials: "B",
-    title: "Repostera y Pastelería",
-    description:
-      "Maestra en postres. Su misión es endulzar la vida con creaciones que combinan arte y sabor, desde pasteles clásicos hasta opciones keto.",
+    title: "Head International Dishes Specialist",
+    description:(
+     <>
+        Belén is the heart of our main courses, bringing enthusiastic, slightly reckless energy to every global cuisine she attempts. Her specialty is fusion cuisine that nobody asked for, like her infamous "Blackened Paella with Whipped Cream Snowcaps." She often confuses the terms "teaspoon" and "**cup**" when adding spices. She once tried to use a blowtorch to **toast a single grain of rice** for a dessert garnish, which is why we keep her focused on the entrées.
+      </>
+    )
   },
 ];
 
 const About = () => {
   return (
     <div className="container mx-auto px-4 py-12">
-      <h1 className="text-5xl font-extrabold text-primary-700 mb-4 text-center">
-        <img src="" alt="" />
-        Conoce a Nuestro Equipo
-      </h1>
-      <p className="text-xl text-gray-600 mb-10 text-center max-w-3xl mx-auto">
-        Somos un equipo apasionado dedicado a compartir las mejores recetas y
-        trucos de cocina, adaptándonos a todos los gustos y niveles.
+      <HeroAbout /><br/>
+      <p className="text-L text-gray-600 mb-18 text-center max-w-3xl mx-auto">
+        We are The Bundled Bunch, a one-of-a-kind crew fueled by passion... and maybe a little too much heat. We absolutely love crafting the best, most unforgettable dishes, achieving flavors so unique they redefine "gourmet." And yes, sometimes that unforgettable flavor is closer to char than cumin, but we call those "crispy flavor enhancements"! We promise our intentions are pure, even if our smoke detectors disagree.
       </p>
 
       {/* Sección de Miembros del Equipo */}
@@ -53,9 +60,7 @@ const About = () => {
               Nuestra Misión
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              Facilitar la cocina diaria, proporcionando instrucciones claras,
-              ingredientes accesibles y deliciosas opciones para todos, desde el
-              principiante hasta el chef experimentado.
+              To offer a consistently surprising menu, utilizing the highest quality ingredients until they reach their maximum thermal capacity. We are dedicated to making food that’s impossible to forget—if only because of the powerful aroma.
             </p>
           </div>
           <div>
@@ -63,9 +68,7 @@ const About = () => {
               Nuestra Visión
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              Ser la fuente de recetas más confiable y amigable de internet,
-              inspirando a millones de personas a cocinar en casa y explorar
-              nuevas culturas gastronómicas.
+              To be the most beloved and slightly feared culinary Bundle, inspiring others to cook with abandon and perhaps a better-maintained ventilation system.
             </p>
           </div>
         </div>
