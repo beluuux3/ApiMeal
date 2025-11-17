@@ -16,15 +16,12 @@ export default function Footer() {
                 className="w-60 h-20 object-contain"
               />
             </Link>
-            <p className="text-sm max-w-xs opacity-90">
-               <strong>Recetas:</strong> donde cocinar no requiere un diploma, solo hambre. <br/>
-                Aquí encontrarás recetas fáciles, rápidas y deliciosas para cuando quieres impresionar… 
-                o simplemente sobrevivir al almuerzo. <br />
-                Desde ideas para principiantes que apenas saben hervir agua, 
-                hasta platillos que harían llorar de orgullo a tu abuela, 
-                este sitio es tu compañero de cocina. <br />
-                Explora por categorías, prueba algo al azar si te sientes valiente, 
-                y prepárate para ensuciar la cocina (y triunfar en el intento).
+           <p className="text-sm max-w-xs opacity-90">
+              <strong>Recipes:</strong> Where cooking doesn’t require a diploma—just a stomach that won’t quit. <br/>
+              Here you'll find easy, fast, and downright delicious recipes for when you want to impress… or just survive lunch without crying. <br/>
+              From beginner-friendly ideas for those who can barely boil water, to dishes that would make your grandma weep tears of pride, this site is your trusty kitchen sidekick. <br/>
+              Browse by category, roll the dice on a random recipe if you’re feeling brave, 
+              and get ready to make a mess (but hey, also triumph gloriously).
             </p>
           </div>
 
